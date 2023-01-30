@@ -1,0 +1,45 @@
+<div class="row">
+  <div class="col-12">
+    <div class="card">
+      <div class="card-body">
+        <h2 class="card-title">Raportet e shikuara</h2>
+        <div class="table-responsive">
+          <table class="table align-middle text-nowrap">
+              <thead>
+                  <tr>
+                      <th class="text-dark font-medium fs-4">Raportuesi</th>
+                      <th class="text-dark font-medium fs-4">Lloj i raportit</th>
+                      <th class="text-dark font-medium fs-4">Shperblyer</th>
+                      <th class="text-dark font-medium fs-4">Data</th>
+                      <th class="text-dark font-medium fs-4">Detajet</th>
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr *ngFor='let report of reports'>
+                      <td>
+                          <div class="d-flex align-items-center">
+                              <img src="../../../assets/images/users/user1.jpg" alt="user" width="45" class="rounded-circle">
+                              <div class="ms-3">
+                                  <h5 class="mb-0 font-medium">{{report.fullName}}</h5>
+                                  <span class="text-muted">{{report.email}}</span>
+                              </div>
+                          </div>
+                      </td>
+                      <td class="fs-4">{{report.category}}</td>
+                      <td>
+                          <span class="p-2 bg-secondary rounded-circle d-inline-block ms-3"></span>
+                      </td>
+
+                      <td>
+                          <h5 class="mb-0 fw-normal">{{report.date | date: 'yyyy/MM/dd | hh:mm:ss'}}</h5>
+                      </td>
+                      <td>
+                          <button class="btn btn-primary">Shiko Detajet</button>
+                      </td>
+                  </tr>
+              </tbody>
+          </table>
+      </div>
+    </div>
+  </div>
+</div>
