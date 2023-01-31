@@ -7,6 +7,10 @@ import { FullComponent } from "./layouts/full/full.component";
 export const Approutes: Routes = [
   {
     path: "",
+    component: LoginComponent,
+  },
+  {
+    path: "",
     component: FullComponent,
     children: [
       {
@@ -27,14 +31,13 @@ export const Approutes: Routes = [
           ),
       },
     ],
-  }
-  ,
+  },
   {
     path: "login",
     component: LoginComponent,
   },
   {
     path: "**",
-    redirectTo: "/starter",
+    component: LoginComponent,
   }
 ];

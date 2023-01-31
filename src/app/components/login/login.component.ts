@@ -10,7 +10,7 @@ import { Router } from "@angular/router";
 })
 export class LoginComponent implements OnInit {
 
-  constructor(private http: HttpClient){
+  constructor(private http: HttpClient, private route: Router){
 
   }
 
@@ -25,8 +25,11 @@ export class LoginComponent implements OnInit {
 
   onSubmit() {
     console.log(this.loginForm.value)
-    this.http.post('https://localhost:7265/api/account/signin', this.loginForm.value).subscribe((data) => {
+    this.http.post('https://localhost:7265/api/account/signin', this.loginForm.value).subscribe((data: any) => {
       console.log(data);
+      console.log('res',data)
+      localStorage.setItem('token',data.token);
+       this.route.navigateByUrl('/dashboard');
     })
   }
 }
