@@ -1,6 +1,6 @@
 import { NgModule } from "@angular/core";
 import { Routes, RouterModule } from "@angular/router";
-import { LoginComponent } from "./component/login/login.component";
+import { LoginComponent } from "./components/login/login.component";
 
 import { FullComponent } from "./layouts/full/full.component";
 
@@ -22,7 +22,7 @@ export const Approutes: Routes = [
       {
         path: "component",
         loadChildren: () =>
-          import("./component/component.module").then(
+          import("./components/component.module").then(
             (m) => m.ComponentsModule
           ),
       },

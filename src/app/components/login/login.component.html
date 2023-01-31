@@ -1,21 +1,21 @@
 <div class="wrapper">
   <div class="row con">
     <div class="col-md-6 input-form">
-      <form onsubmit="event.preventDefault()" class="box">
+      <form onsubmit="event.preventDefault()" class="box" [formGroup]="loginForm" (ngSubmit)="onSubmit()">
         <h1>KYÇU</h1>
         <p class="text-muted">ju lutem vendosni fjalekalimin edhe email-in</p>
         <input
           type="text"
           name=""
           placeholder="Email"
-          [formControlName]="loginObj.email"
+          formControlName="email"
           required
         />
         <input
           type="password"
           name=""
           placeholder="Fjalekalimi"
-          [formControlName]="loginObj.password"
+          formControlName="password"
         />
         <a class="forgot text-muted" href="#">Keni harruar fjalekalimin??</a>
         <input type="submit" name="" value="Login" href="#" />
