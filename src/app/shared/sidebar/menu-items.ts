@@ -11,17 +11,9 @@ export const ROUTES: RouteInfo[] = [
     submenu: []
   },
   {
-    path: '/component/table',
-    title: 'Table',
-    icon: 'bi bi-layout-split',
-    class: '',
-    extralink: false,
-    submenu: []
-  },
-  {
     path: '/component/incoming-reports',
     title: 'Raportet',
-    icon: 'bi bi-speedometer2',
+    icon: 'bi bi-eye-slash-fill',
     class: '',
     extralink: false,
     submenu: []
@@ -29,7 +21,7 @@ export const ROUTES: RouteInfo[] = [
   {
     path: '/component/reviewed-reports',
     title: 'Raportet e shikuara',
-    icon: 'bi bi-layout-split',
+    icon: 'bi bi-eye-fill',
     class: '',
     extralink: false,
     submenu: []
@@ -37,7 +29,7 @@ export const ROUTES: RouteInfo[] = [
   {
     path: '/component/users',
     title: 'Perdoruesit',
-    icon: 'bi bi-speedometer2',
+    icon: 'bi bi-people-fill',
     class: '',
     extralink: false,
     submenu: []
@@ -45,9 +37,17 @@ export const ROUTES: RouteInfo[] = [
   {
     path: '/component/profile',
     title: 'Profili',
-    icon: 'bi bi-layout-split',
+    icon: 'bi bi-person-fill',
     class: '',
     extralink: false,
     submenu: []
-  }
+  },
+  {
+    path: '/component/users',
+    title: 'Administratoret',
+    icon: 'bi bi-microsoft-teams',
+    class: '',
+    extralink: false,
+    submenu: []
+  },
 ];
