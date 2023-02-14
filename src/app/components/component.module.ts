@@ -11,6 +11,7 @@ import { ReviewedReportsComponent } from './reviewed-reports/reviewed-reports.co
 import { ProfileComponent } from './profile/profile.component';
 import { UsersComponent } from './users/users.component';
 import { LoginComponent } from './login/login.component';
+import { ReportsComponent } from './reports/reports.component';
 
 @NgModule({
   imports: [
@@ -27,6 +28,7 @@ import { LoginComponent } from './login/login.component';
     ProfileComponent,
     UsersComponent,
     LoginComponent,
+    ReportsComponent,
   ]
 })
 export class ComponentsModule { }
