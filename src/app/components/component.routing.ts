@@ -1,4 +1,5 @@
 import { Routes } from '@angular/router';
+import { AdministratorsComponent } from './administrators/administrators.component';
 import { IncomingReportsComponent } from './incoming-reports/incoming-reports.component';
 import { ProfileComponent } from './profile/profile.component';
 import { ReviewedReportsComponent } from './reviewed-reports/reviewed-reports.component';
@@ -30,6 +31,10 @@ export const ComponentsRoutes: Routes = [
       {
 				path: 'profile',
 				component: ProfileComponent
+			},
+			{
+				path: 'administrators',
+				component: AdministratorsComponent
 			},
 		]
 	}

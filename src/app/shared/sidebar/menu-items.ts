@@ -43,7 +43,7 @@ export const ROUTES: RouteInfo[] = [
     submenu: []
   },
   {
-    path: '/component/users',
+    path: '/component/administrators',
     title: 'Administratoret',
     icon: 'bi bi-microsoft-teams',
     class: '',
